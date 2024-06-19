@@ -282,6 +282,7 @@ span {
     box-shadow: 0 0 5px var(--main-color);
     padding: 20px;
     transition: all 0.3s ease;
+  
 }
 
 .row img {
@@ -298,10 +299,11 @@ span {
     margin-bottom: 0.5rem;
 }
 
-.row h4 {
+.row h3 {
     font-size: 20px;
     font-weight: 600;
     color: var(--text-color);
+
 }
 
 .row i {
@@ -441,7 +443,18 @@ span {
         padding: 2rem 3%;
     }
 }
+@media (width<=771px){
+    .portfolio-content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+    .row i {
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+    
 
+}
 @media (min-width: 786px) and (max-width:826px) {
     .nav-btn {
         font-size: 1.1rem;
